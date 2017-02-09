@@ -1,0 +1,12 @@
+application:
+  restart: always
+  ports:
+    - 8201:80
+  tty: true
+  labels:
+    project: ${RANCHER_PROJECT_NAME}
+    purpose: application
+  image: ${IMAGE_TAG_NAME}
+  log_driver: json-file
+  log_opt:
+    labels: project,purpose
