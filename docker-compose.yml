@@ -1,7 +1,7 @@
 application:
   restart: always
   ports:
-    - 8201:80
+    - 8084:80
   tty: true
   labels:
     project: ${RANCHER_PROJECT_NAME}
