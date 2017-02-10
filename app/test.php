@@ -1,2 +1,2 @@
 <?php
-    echo 'Docker Test Project';
+    echo 'This is a Docker Test Project';
