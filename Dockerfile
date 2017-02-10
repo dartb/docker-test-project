@@ -13,9 +13,6 @@ RUN apt-get install -y --allow-unauthenticated \
 	php7.0-cli && \
     rm -rf /var/lib/apt/lists/*
 
-#Enable Modules
-RUN a2enmod rewrite ssl
-
 #Copy apache configuration
 ADD container_support/000-default.conf /etc/apache2/sites-available/000-default.conf
 
