@@ -20,6 +20,9 @@ ADD container_support/000-default.conf /etc/apache2/sites-available/000-default.
 ADD container_support/run.sh /run.sh
 RUN chmod 755 /*.sh
 
+#Add .htaccess file
+ADD container_support/.htaccess /.htaccess
+
 #Make web root if it does not exist and copy contents of app directory to web root
 RUN mkdir -p /var/www/html
 ADD app/*  /var/www/html/
