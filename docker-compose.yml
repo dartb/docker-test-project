@@ -4,8 +4,4 @@ docker-app:
   ports:
     - 8084:80
   image: ${IMAGE_TAG_NAME}
-  environment:
-    TEST_ONE:
-    TEST_TWO:
-    MY_TEST:
   log_driver: json-file
