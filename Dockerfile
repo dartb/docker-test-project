@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install base packages
 RUN apt-get update
 RUN apt-get install -y python-software-properties software-properties-common
-RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/apache2 -y && LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php -y && apt-get update
+RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/apache2 -y && LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php -y && apt-get update
 RUN apt-get install -y --allow-unauthenticated \
 	apache2 \
 	libapache2-mod-php7.0 \
